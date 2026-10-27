@@ -15,5 +15,11 @@ Updated daily by the SIGNAL step. One row per signal. "Reproduced" links to the 
 | 2026-10-26 | code-yeongyu/senpi#4213 | startup grows quadratically with skill count (maintainer-filed) | PERF | check | - | - |
 | 2026-10-26 | https://github.com/code-yeongyu/oh-my-openagent/issues/11384 | POSIX memory reflection deadline can leave a SIGTERM-ignoring descendant alive | MEMORY | check: mhc reproduction path not established | - | - |
 | 2026-10-26 | https://github.com/code-yeongyu/oh-my-openagent/issues/11383 | Model-family usage limit without family name is treated as account-wide; same-provider fallback is skipped | OTHER | check | - | - |
+| 2026-10-27 | https://github.com/code-yeongyu/senpi/issues/4415 | TUI render signatures recursively hash omitted tails; quadratic memory and Node heap OOM on wide tool results | MEMORY | check whether mhc has the matching TUI path | - | - |
+| 2026-10-27 | https://github.com/code-yeongyu/oh-my-openagent/issues/11484 | Failed taskkill or detached POSIX descendants can survive the memory deadline | MEMORY | check | - | - |
+| 2026-10-27 | https://github.com/code-yeongyu/oh-my-openagent/issues/11450 | Expired time-boxed memory remains projected; expiry is not time-invalidated | MEMORY | check | - | - |
+| 2026-10-27 | https://github.com/code-yeongyu/oh-my-openagent/issues/11453 | External memory projection truncates filenames in large sets | MEMORY | check | - | - |
+| 2026-10-27 | https://github.com/code-yeongyu/oh-my-openagent/issues/11512 | Memory expiry follow-ups: hook comment bytes, pressure line counts, and invalid expiry handling | MEMORY | check | - | - |
+| 2026-10-27 | https://github.com/code-yeongyu/oh-my-openagent/issues/11557 | Reduce bytes used by memory external_projection names and expiry code | MEMORY | check | - | - |
 
 Types: MEMORY, INSTALL, WINDOWS, HEADLESS, PERF, OTHER.
