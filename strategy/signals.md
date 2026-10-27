@@ -13,5 +13,7 @@ Updated daily by the SIGNAL step. One row per signal. "Reproduced" links to the 
 | 2026-10-26 | code-yeongyu/oh-my-openagent#11262 | macOS: keychain keeps prompting "bun wants to access key omo-cli"; memory tool hangs while prompt is open (external) | INSTALL | check (no bun in mhc) | - | - |
 | 2026-10-26 | code-yeongyu/oh-my-openagent#11230 | Windows .cmd shims lose a Node path containing `!` (maintainer-filed) | WINDOWS | yes: mhc ships no Node shim | - | - |
 | 2026-10-26 | code-yeongyu/senpi#4213 | startup grows quadratically with skill count (maintainer-filed) | PERF | check | - | - |
+| 2026-10-26 | https://github.com/code-yeongyu/oh-my-openagent/issues/11384 | POSIX memory reflection deadline can leave a SIGTERM-ignoring descendant alive | MEMORY | check: mhc reproduction path not established | - | - |
+| 2026-10-26 | https://github.com/code-yeongyu/oh-my-openagent/issues/11383 | Model-family usage limit without family name is treated as account-wide; same-provider fallback is skipped | OTHER | check | - | - |
 
 Types: MEMORY, INSTALL, WINDOWS, HEADLESS, PERF, OTHER.
