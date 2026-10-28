@@ -21,5 +21,9 @@ Updated daily by the SIGNAL step. One row per signal. "Reproduced" links to the 
 | 2026-10-27 | https://github.com/code-yeongyu/oh-my-openagent/issues/11453 | External memory projection truncates filenames in large sets | MEMORY | check | - | - |
 | 2026-10-27 | https://github.com/code-yeongyu/oh-my-openagent/issues/11512 | Memory expiry follow-ups: hook comment bytes, pressure line counts, and invalid expiry handling | MEMORY | check | - | - |
 | 2026-10-27 | https://github.com/code-yeongyu/oh-my-openagent/issues/11557 | Reduce bytes used by memory external_projection names and expiry code | MEMORY | check | - | - |
+| 2026-10-28 | https://github.com/code-yeongyu/oh-my-openagent/issues/11584 | Single interactive TUI session reported 4.94-6.35 GB anon RSS peaks and repeated OOM kills; memory need/bounding questioned | MEMORY | proxy only: mhc benchmark is a fixed headless DAG, not interactive TUI | - | - |
+| 2026-10-28 | https://github.com/code-yeongyu/oh-my-openagent/issues/11651 | Windows process-tree kill can leave descendants alive when the root exits or process listing fails | MEMORY | no: Windows-specific supervisor path | - | - |
+| 2026-10-28 | https://github.com/code-yeongyu/senpi/issues/4616 | Compact paged-tree round-cache bound uses an estimate rather than actual heap | MEMORY | check: no matching workload established | - | - |
+| 2026-10-28 | https://github.com/code-yeongyu/senpi/issues/4614 | Source-loader test children re-strip and recompile their TypeScript graph at every launch | PERF | no: mhc is Rust; workload is a test loader | - | - |
 
 Types: MEMORY, INSTALL, WINDOWS, HEADLESS, PERF, OTHER.
