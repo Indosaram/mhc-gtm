@@ -1,0 +1,33 @@
+{
+  "capturedAt": "2026-10-29T23:30:03.783Z",
+  "repo": "Indosaram/mhc",
+  "stars": 2,
+  "forks": 0,
+  "watchers": 0,
+  "views14d": {
+    "count": 12,
+    "uniques": 7
+  },
+  "clones14d": {
+    "count": 3265,
+    "uniques": 387
+  },
+  "referrers": [
+    {
+      "referrer": "github.com",
+      "count": 3,
+      "uniques": 3
+    },
+    {
+      "referrer": "t.co",
+      "count": 1,
+      "uniques": 1
+    }
+  ],
+  "installerDownloadsTotal": 58,
+  "externalIssues": 0,
+  "manual": {
+    "challengeReproductions": [],
+    "externalPosts": []
+  }
+}

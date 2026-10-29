@@ -25,5 +25,6 @@ Updated daily by the SIGNAL step. One row per signal. "Reproduced" links to the 
 | 2026-10-28 | https://github.com/code-yeongyu/oh-my-openagent/issues/11651 | Windows process-tree kill can leave descendants alive when the root exits or process listing fails | MEMORY | no: Windows-specific supervisor path | - | - |
 | 2026-10-28 | https://github.com/code-yeongyu/senpi/issues/4616 | Compact paged-tree round-cache bound uses an estimate rather than actual heap | MEMORY | check: no matching workload established | - | - |
 | 2026-10-28 | https://github.com/code-yeongyu/senpi/issues/4614 | Source-loader test children re-strip and recompile their TypeScript graph at every launch | PERF | no: mhc is Rust; workload is a test loader | - | - |
+| 2026-10-29 | https://github.com/code-yeongyu/oh-my-openagent/issues/11824 | Interactive TUI retains full partial message_update strings; one long stream reportedly grows JS heap beyond 8 GB | MEMORY | proxy only: mhc benchmark is fixed headless DAG, not interactive TUI | - | - |
 
 Types: MEMORY, INSTALL, WINDOWS, HEADLESS, PERF, OTHER.
