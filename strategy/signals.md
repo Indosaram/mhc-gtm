@@ -26,5 +26,7 @@ Updated daily by the SIGNAL step. One row per signal. "Reproduced" links to the 
 | 2026-10-28 | https://github.com/code-yeongyu/senpi/issues/4616 | Compact paged-tree round-cache bound uses an estimate rather than actual heap | MEMORY | check: no matching workload established | - | - |
 | 2026-10-28 | https://github.com/code-yeongyu/senpi/issues/4614 | Source-loader test children re-strip and recompile their TypeScript graph at every launch | PERF | no: mhc is Rust; workload is a test loader | - | - |
 | 2026-10-29 | https://github.com/code-yeongyu/oh-my-openagent/issues/11824 | Interactive TUI retains full partial message_update strings; one long stream reportedly grows JS heap beyond 8 GB | MEMORY | proxy only: mhc benchmark is fixed headless DAG, not interactive TUI | - | - |
+| 2026-10-30 | https://github.com/code-yeongyu/senpi/issues/5113 | Old RPC agent processes hold 0.5-1.0 GB more than fresh processes on the same session; memory_report cannot be enabled after start | MEMORY | proxy only: mhc benchmark does not exercise long-lived RPC process reuse | - | - |
+| 2026-10-30 | https://github.com/code-yeongyu/senpi/issues/4999 | Repeated tool calls reportedly grow host RSS beyond 32 GB and session close times out | MEMORY | check: persistent-host tool-call path is not established in the fixed DAG harness | - | - |
 
 Types: MEMORY, INSTALL, WINDOWS, HEADLESS, PERF, OTHER.
