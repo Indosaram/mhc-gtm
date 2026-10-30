@@ -29,8 +29,8 @@ Other results were test/CI reports, Windows-specific failures, or unrelated feat
 
 - Signal: https://github.com/code-yeongyu/senpi/issues/5113 (old RPC processes reportedly use 0.5-1.0 GB more anon memory than fresh processes).
 - Command (single 512 MB capped attempt on Linux `omarchy`): `ssh omarchy 'set -eu; run="$HOME/.cache/mhcgtm-day7"; rm -rf "$run"; mkdir -p "$run"; trap '\''rm -rf "$run"'\'' EXIT; git clone --depth 1 https://github.com/Indosaram/mhc "$run/mhc"; cd "$run/mhc"; sed -i '\''s|docker run --rm --name "membench-\$3" --network host|docker run --rm --name "membench-\$3" --network host -m 512m --memory-swap 512m|'\'' tools/membench/bench.sh; grep -- "-m 512m" tools/membench/bench.sh; timeout --signal=TERM --kill-after=10s 1180s env RUNS=1 AGENTS=mhc WORK="$run/work" "$run/mhc/tools/membench/bench.sh"'`.
-- Result: see command output for source and run details. This fixed-DAG harness is only proxy evidence for an RPC process-retention report; no claim of reproducing that RPC issue. Exact binary version, measured rc/out_ok, anon peak, and `memory.peak` will be recorded only if the harness provides them.
-- Cleanup: command EXIT trap removes the run directory. Cleanup verification is pending command completion.
+- Result: the clone completed and the 512 MB cap was verified in `tools/membench/bench.sh`, but the remote session did not return harness output. Follow-up inspection found no running benchmark process or container and no cloned source/log in the run directory, so it is unknown whether the harness reached its measured stage. mhc version, run rc, out_ok, anon peak, and `memory.peak` are unavailable; no reproduction is claimed. This fixed-DAG harness is proxy-only for an RPC process-retention report.
+- Cleanup: removed the remaining `~/.cache/mhcgtm-day7` work directory and verified it absent; no `membench` container remained. No retry.
 
 ## SHIP material sheet (for the human; nothing posted)
 
